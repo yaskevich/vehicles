@@ -1,0 +1,147 @@
+.informer{
+	line-height:40px;
+	text-align:center;
+}
+textarea { 
+   resize:vertical;/*will prevent resizing horizontally*/ 
+   width:100%;
+   max-height:10em;
+}
+
+.alarm {
+	/* background-color:red; */
+	color:red;
+	font-size:14px;
+	
+}
+.star{
+	/* color:white; */
+	/* color:red; */
+}
+
+#alarm-button {
+	height:62px;
+	width:62px;
+}
+
+#image-sample {
+	width:200px;
+	max-height:170px;
+}
+.card-input{
+	width:100%;
+}
+.card-div{
+	margin-top:3px;
+	line-height: 1.2em;
+}
+
+
+@media only screen and (max-width: 390px) {
+	#card-photo:after {
+		/* content: "\f005"; */
+		content: "Нажатие на кнопку вызовет стандартный интерфейс камеры вашего смартфона";
+		/* font-family: FontAwesome; */
+		display: inline-block;
+		color:gray;
+		font-size: smaller;
+	}
+	#card-photo.no-after:after {
+		display:none;
+	}
+
+}
+
+.modal {
+	max-width:350px;
+}
+
+
+/* new upper */
+body {
+    padding: 0;
+    margin: 0;
+	font: 12px/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+html, body, #map {
+    height: 100%;
+}
+
+.name {
+	font-weight:bold;
+	/* margin-left:-5px; */
+	/* margin-right:3px; */
+}
+
+.name > a{
+	text-decoration:none;
+}
+
+.shadow {
+    -webkit-filter: drop-shadow( 0px 0px 5px #000 );
+            filter: drop-shadow( 0px 0px 5px #000 ); /* Same syntax as box-shadow */
+}
+
+.leaflet-popup-content-wrapper, .leaflet-popup-tip{
+	background-color:#D8D8D8;
+	font-family: 16px "PT Sans" !important;
+}
+
+/* here */
+.leaflet-popup-content{
+	min-height:20px;
+	width:14em;
+}
+
+
+
+.field {
+	 font-style: italic;
+}
+.field::after {
+content: ": ";
+}
+
+.dh {
+}
+
+.mail > a {
+      text-decoration:none;
+   }
+   
+.spec{
+	padding-top:5px;
+}
+
+.pr{
+	font-weight:bold;
+	color:navy;
+}
+/* #map {
+	width: 800px; 
+	height: 600px; 
+	border: 1px solid #ccc;
+}
+ */
+#progress {
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    left: 400px;
+    top: 300px;
+    width: 200px;
+    height: 20px;
+    margin-top: -20px;
+    margin-left: -100px;
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 4px;
+    padding: 2px;
+}
+
+#progress-bar {
+    width: 0;
+    height: 100%;
+    background-color: #76A6FC;
+    border-radius: 4px;
+}
